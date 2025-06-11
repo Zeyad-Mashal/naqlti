@@ -104,7 +104,7 @@
   padding: 0 20px;
 }
 .hero_content h1 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   margin-bottom: 20px;
   line-height: 2;
 }
@@ -190,7 +190,7 @@
     background-color: var(--sec-color);
     position: absolute;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    top: 5rem;
+    top: 4.8rem;
     width: 100%;
   }
 
