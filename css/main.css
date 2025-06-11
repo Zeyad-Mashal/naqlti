@@ -249,10 +249,17 @@
   }
   .hero_content h1 {
     font-size: 2rem;
+    margin-bottom: 10px;
   }
   .hero_content p {
     font-size: 1.1rem;
     width: 100%;
+    margin-bottom: 10px;
+  }
+  .hero_content a {
+    padding: 8px 30px;
+    font-size: 1rem;
+    margin-bottom: 10px;
   }
   .hero_image img {
     width: 100%;
