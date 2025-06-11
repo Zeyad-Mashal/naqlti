@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: "Cairo", sans-serif;
+  scroll-behavior: smooth;
+}
+:root {
+  --prim-color: #ff7700;
+  --sec-color: #fff;
+  --third-color: #000;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--sec-color);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.navbar img {
+  width: 120px;
+}
+.navbar_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.navbar_links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  gap: 1rem;
+}
+.navbar_links ul li {
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  width: 100px;
+  text-align: center;
+}
+
+.navbar_links ul li:hover {
+  color: var(--sec-color);
+  cursor: pointer;
+  background-color: var(--prim-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.navbar_contact a {
+  text-decoration: none;
+  background-color: var(--prim-color);
+  color: var(--sec-color);
+  padding: 10px 30px;
+  border-radius: 5px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.navbar_toggle,
+.navbar_menu {
+  display: none;
+}
+
+/* hero */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../images/world.png");
+  background-size: cover;
+  background-position: center;
+  margin-top: 4.8rem;
+}
+.hero_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero_content {
+  flex: 1;
+  color: var(--third-color);
+  text-align: right;
+  padding: 0 20px;
+}
+.hero_content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  line-height: 2;
+}
+.hero_content p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  line-height: 2.2;
+  width: 80%;
+}
+.hero_content p span {
+  color: var(--prim-color);
+  font-weight: 600;
+}
+.hero_content a {
+  text-decoration: none;
+  background-color: var(--prim-color);
+  color: var(--sec-color);
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  display: flex;
+  gap: 10px;
+  width: fit-content;
+}
+.hero_image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.hero_image img {
+  width: 120%;
+  height: auto;
+  margin-left: -50px;
+}
+.hero_content {
+  animation: fadeInUp 1.5s ease forwards;
+  opacity: 0; /* عشان يبدأ من الشفافية */
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ميديا كويري للموبايل */
+@media (max-width: 768px) {
+  /* إخفاء روابط الديسكتوب على الموبايل */
+  .navbar_links,
+  .navbar_contact {
+    display: none;
+  }
+
+  /* إظهار زر المنيو */
+  .navbar_toggle {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--third-color);
+  }
+
+  /* شكل زر المنيو الافتراضي (في الديسكتوب مخفي) */
+  .navbar_toggle {
+    display: block;
+  }
+
+  /* إظهار قائمة الموبايل عند التفعيل */
+  .navbar_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--sec-color);
+    position: absolute;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    top: 5rem;
+    width: 100%;
+  }
+
+  .navbar_menu.active {
+    display: flex;
+  }
+
+  .navbar_links_mobile ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .navbar_links_mobile ul li {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar_links_mobile ul li:hover {
+    background-color: var(--prim-color);
+    color: var(--sec-color);
+    cursor: pointer;
+  }
+
+  .navbar_contact_mobile a {
+    text-decoration: none;
+    background-color: var(--prim-color);
+    color: var(--sec-color);
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+  }
+  /* hero */
+  .hero_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero_content {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hero_content h1 {
+    font-size: 2rem;
+  }
+  .hero_content p {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .hero_content a {
+    text-align: center;
+  }
+  .hero_image img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+}
