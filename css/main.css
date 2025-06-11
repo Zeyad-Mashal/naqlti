@@ -16,6 +16,19 @@
   --sec-color: #fff;
   --third-color: #000;
 }
+.btn {
+  text-decoration: none;
+  background-color: var(--prim-color);
+  color: var(--sec-color);
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+}
 
 /* navbar */
 .navbar {
@@ -51,7 +64,7 @@
   font-size: 1.1rem;
   transition: all 0.3s ease;
   font-weight: 500;
-  width: 100px;
+  width: 120px;
   text-align: center;
 }
 
@@ -59,7 +72,7 @@
   color: var(--sec-color);
   cursor: pointer;
   background-color: var(--prim-color);
-  padding: 10px;
+  padding: 4px 10px;
   border-radius: 10px;
 }
 
@@ -146,6 +159,151 @@
 .hero_content {
   animation: fadeInUp 1.5s ease forwards;
   opacity: 0; /* عشان يبدأ من الشفافية */
+}
+
+/* about us */
+.aboutus {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0 2rem;
+}
+.aboutus_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aboutus_content {
+  order: 2;
+  width: 50%;
+}
+.aboutus_content h1 {
+  color: var(--prim-color);
+  margin-bottom: 1rem;
+}
+.aboutus_content p {
+  margin-bottom: 10px;
+  width: 80%;
+  font-weight: bold;
+}
+.aboutus_content ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 1rem;
+  list-style: none;
+  padding: 0;
+}
+.aboutus_content ul li {
+  position: relative;
+  padding-right: 3rem;
+}
+.aboutus_content ul li::before {
+  content: "✓";
+  color: var(--sec-color);
+  background-color: var(--prim-color);
+  width: 15px;
+  height: 15px;
+  padding: 3px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* our apps */
+.apps {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0 2rem;
+}
+.apps_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.apps_container h1 {
+  color: var(--third-color);
+  margin-bottom: 2rem;
+}
+.apps_container p {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #444;
+}
+.apps_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.apps_item {
+  position: relative;
+  padding: 20px;
+  max-width: 350px;
+  height: 250px;
+  border-radius: 20px;
+  background: linear-gradient(#fff, #fff) padding-box,
+    /* خلفية بيضاء داخلية */ linear-gradient(to right, #ff7b00, #666) border-box; /* تدرج */
+  border: 2px solid transparent; /* شفاف حتى يظهر التدرج */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: right;
+}
+
+.apps_item .icon {
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.apps_item .icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.apps_item .title {
+  color: #ff7b00;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.apps_item .title span {
+  font-weight: bold;
+  color: #ff7b00;
+}
+
+.apps_item .desc {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: right;
 }
 
 @keyframes fadeInUp {
@@ -265,5 +423,53 @@
     width: 100%;
     height: auto;
     margin-left: 0;
+  }
+  /* about us */
+  .aboutus_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutus_content {
+    width: 100%;
+    order: 0;
+    margin-top: 1rem;
+  }
+  .aboutus_video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutus_video video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .aboutus_content p {
+    width: 100%;
+  }
+  .aboutus_content ul li {
+    font-size: 0.9rem;
+    padding-right: 2rem;
+  }
+  /* our apps */
+  .apps {
+    padding: 0 1rem;
+  }
+  .apps_container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .apps_container p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .apps_list {
+    padding: 0;
+  }
+  .apps_item {
+    height: auto;
+    width: 100%;
   }
 }
