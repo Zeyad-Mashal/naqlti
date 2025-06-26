@@ -317,6 +317,243 @@
   }
 }
 
+/* app trip */
+.app_trip {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding: 0 2rem;
+}
+.app_trip_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.app_trip_content {
+  width: 50%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.app_trip_content h3 {
+  font-size: 1.5rem;
+}
+.app_trip_content p {
+  font-size: 1.1rem;
+  width: 80%;
+}
+.app_trip_content ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 1rem;
+  list-style: none;
+  padding: 0;
+}
+.app_trip_content ul li {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.app_trip_content ul li i {
+  background-color: #e65722;
+  color: var(--sec-color);
+  padding: 10px;
+  border-radius: 10px;
+  width: 35px;
+}
+.app_trip_image {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  height: 600px;
+}
+/* review */
+.reviews {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+.reviews_container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+.reviews_control {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  flex-direction: column;
+  width: 250px;
+  height: 270px;
+  background-color: var(--sec-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+.reviews_control h3 {
+  color: var(--prim-color);
+  font-size: 1rem;
+}
+.reviews_control h1 {
+  color: var(--third-color);
+  font-size: 1.5rem;
+}
+.reviews_control p {
+  color: #555;
+  font-size: 0.9rem;
+}
+.reviews_control .controller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.reviews_control .controller button {
+  background-color: #e65722;
+  color: var(--sec-color);
+  padding: 6px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 50px;
+}
+.reviews_list_wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+.reviews_list {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  direction: ltr;
+  width: fit-content;
+}
+.review_item {
+  max-width: 300px;
+  flex-shrink: 0;
+  background-color: var(--sec-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+.review_item h3 {
+  color: var(--prim-color);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.review_item p {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.review_item .reviewer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #ddd;
+  padding: 20px 0;
+}
+.review_item .reviewer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.review_item .reviewer span {
+  color: #555;
+  font-size: 0.9rem;
+}
+.reviewer_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.stars i {
+  color: #ff7700;
+  font-size: 1.2rem;
+}
+.footer {
+  width: 100%;
+  height: 100%;
+  background-color: #e9ebed;
+  padding: 1rem 3rem;
+  text-align: center;
+  color: var(--third-color);
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.footer_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.footer_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer_logo img {
+  width: 150px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.social i {
+  font-size: 1.5rem;
+  color: var(--prim-color);
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.footer_company > ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+.footer_copyright {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid #e65722;
+  padding-top: 1rem;
+}
 /* ميديا كويري للموبايل */
 @media (max-width: 768px) {
   /* إخفاء روابط الديسكتوب على الموبايل */
@@ -471,5 +708,83 @@
   .apps_item {
     height: auto;
     width: 100%;
+  }
+  /* app trip */
+  .app_trip_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .app_trip_content {
+    width: 100%;
+    text-align: center;
+  }
+  .app_trip h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--prim-color);
+    padding: 10px;
+  }
+  .app_trip_content h3 {
+    font-size: 1.1rem;
+  }
+  .app_trip_content p {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .app_trip_content ul {
+    gap: 10px;
+  }
+  .app_trip_content ul li {
+    font-size: 0.9rem;
+  }
+  .app_trip_content ul li li i {
+    width: 25px;
+    height: 25px;
+    font-size: 1rem;
+    padding: 5px;
+  }
+  .app_trip_image {
+    width: 100%;
+    height: 500px;
+    margin-top: 1rem;
+  }
+  .review_item {
+    width: 90vw;
+  }
+
+  .reviews_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews_control {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .reviews_control .controller {
+    justify-content: center;
+  }
+  .reviews_list {
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  /* footer */
+  .footer {
+    padding: 1rem;
+  }
+  .footer_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_company {
+    align-items: center;
+  }
+  .footer_copyright {
+    flex-direction: column;
+    align-items: center;
   }
 }
