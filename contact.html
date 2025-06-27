@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نقلتي</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <script
+      src="https://kit.fontawesome.com/9efa984a6f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar_container">
+        <img src="./images/logo.png" alt="شعار نقلتي" />
+
+        <!-- روابط الديسكتوب -->
+        <div class="navbar_links">
+          <ul>
+            <li onclick="window.location.href='index.html'">الرئيسية</li>
+            <li>عن نقلتي</li>
+            <li>الخدمات</li>
+            <li onclick="window.location.href='contact.html'">تواصل معنا</li>
+          </ul>
+        </div>
+
+        <!-- زر التواصل -->
+        <div class="navbar_contact">
+          <a href="tel:+966123456789" class="navbar_phone">
+            تواصل معنا <i class="fa-solid fa-chevron-left"></i>
+          </a>
+        </div>
+
+        <!-- زر الموبايل -->
+        <div class="navbar_toggle" id="navbar-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <!-- قائمة الموبايل -->
+      <div class="navbar_menu" id="navbar-menu">
+        <div class="navbar_links_mobile">
+          <ul>
+            <li>الرئيسية</li>
+            <li>عن نقلتي</li>
+            <li>الخدمات</li>
+            <li>تواصل معنا</li>
+          </ul>
+        </div>
+        <div class="navbar_contact_mobile">
+          <a href="tel:+000000" class="navbar_phone">
+            تواصل معنا <i class="fa-solid fa-chevron-left"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="contact">
+        <h1>تواصل معنا الآن وسنكون سعداء بخدمتك في أسرع وقت</h1>
+        <p>فريق دعم "نقلتي" جاهز للإجابة على استفساراتك ومساعدتك في اختيار الخدمة المناسبة.</p>
+        <div class="contact_container">
+            <div class="contact_form">
+                <div class="contact_form_name">
+                    <label for="">
+                    الاسم الاول
+                    <input type="text" placeholder="أدخل الاسم الاول" />
+                </label>
+                <label for="">
+                    الاسم الثاني
+                    <input type="text" placeholder="أدخل الاسم الثاني" />
+                </label>
+                </div>
+                <label for="">
+                    البريد الإلكتروني
+                    <input type="email" placeholder="أدخل البريد الإلكتروني" />
+                </label>
+                <label for="">
+                    رقم الهاتف
+                    <input type="tel" placeholder="أدخل رقم الهاتف" />
+                </label>
+                <label for="">
+                    التاريخ
+                    <input type="date" />
+                </label>
+                <label for="">
+                    الرسالة
+                    <textarea placeholder="أدخل رسالتك هنا"></textarea>
+                </label>
+                <button>ارسال</button>
+            </div>
+            <div class="contact_info">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8520.745139434142!2d29.980152512515318!3d31.254944798881265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c5354c997825%3A0x8bc1a51643df99c0!2z2YHZhtiv2YIg2KfZhNmF2K3YsdmI2LPYqQ!5e0!3m2!1sar!2seg!4v1751023890816!5m2!1sar!2seg" width="450" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact_info_data">
+                    <div class="icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="data">
+                        <h3>العنوان</h3>
+                        <p>794 شارع مكاليستر سان فرانسيسكو، 94102</p>
+                    </div>
+                </div>
+                <div class="contact_info_data">
+                    <div class="icon">
+                        <i class="fa-solid fa-at"></i>
+                    </div>
+                    <div class="data">
+                        <h3>البريد الإلكتروني</h3>
+                        <p>Smile01@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact_info_data">
+                    <div class="icon">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+                    <div class="data">
+                        <h3>رقم الهاتف</h3>
+                        <p>01205222331</p>
+                    </div>
+                </div>
+                <div class="contact_info_data">
+                    <div class="icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <div class="data">
+                        <h3>رقم للمحادثه</h3>
+                        <p>01205222331</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- footer -->
+         <div class="footer">
+          <div class="footer_container">
+            <div class="footer_logo">
+              <img src="./images/logo.png" alt="نقلتي" />
+              <div class="social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+            <div class="footer_company">
+              <h3>الشركة</h3>
+              <ul>
+                <li>عن نقلتي</li>
+                <li>الخدمات</li>
+                <li>تواصل معنا</li>
+                <li>الأسئلة الشائعة</li>
+              </ul>
+            </div>
+            <div class="footer_company">
+              <h3>الخدمات</h3>
+              <ul>
+                <li>عن نقلتي</li>
+                <li>الخدمات</li>
+                <li>تواصل معنا</li>
+                <li>الأسئلة الشائعة</li>
+              </ul>
+            </div>
+            <div class="footer_company">
+              <h3>الدعم</h3>
+              <ul>
+                <li>عن نقلتي</li>
+                <li>الخدمات</li>
+                <li>تواصل معنا</li>
+                <li>الأسئلة الشائعة</li>
+              </ul>
+            </div>
+            <div class="footer_company ">
+              <h3>تواصل معنا</h3>
+              <ul class="contact">
+                <li><i class="fa-solid fa-envelope"></i> contact@company.com</li>
+                <li><i class="fa-solid fa-phone"></i> 01205222331</li>
+                <li><i class="fa-solid fa-location-dot"></i> 794 شارع مكاليستر
+سان فرانسيسكو، 94102</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_copyright">
+            <p> 2025 &copy; نقلتي</p>
+            <p>جميع الحقوق محفوظة | الشروط والأحكام | سياسة الخصوصية</p>
+         </div>
+    <!-- js -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
