@@ -52,3 +52,8 @@ setInterval(() => {
 window.addEventListener("resize", () => {
     updateSlider(currentIndex);
 });
+document.querySelectorAll('.navbar_links_mobile .dropdown').forEach(drop => {
+    drop.addEventListener('click', () => {
+        drop.classList.toggle('open');
+    });
+});
