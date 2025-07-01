@@ -12,7 +12,7 @@
   scroll-behavior: smooth;
 }
 :root {
-  --prim-color: #ff7700;
+  --prim-color: #E65722 ;
   --sec-color: #fff;
   --third-color: #000;
 }
@@ -535,7 +535,7 @@
   flex-direction: column;
 }
 .stars i {
-  color: #ff7700;
+  color: #E65722 ;
   font-size: 1.2rem;
 }
 .footer {

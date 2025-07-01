@@ -118,31 +118,89 @@
   gap: 1rem;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
-.why_us_item > h2 {
-  background-color: rgba(77, 70, 199, 1);
+.why_us_item h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  position: relative;
+  padding-right: 1.2rem;
+}
+.why_us_item h2 .span1,
+.why_us_item h2 .span2,
+.why_us_item h2 .span3 {
+  background-color: rgba(199, 70, 77, 0.1);
   border-radius: 50%;
   width: 30px;
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  font-size: 16px;
+  position: absolute;
+  right: 0;
 }
+.why_us_item h2 .span2 {
+  background-color: rgba(87, 230, 34, 0.1);
+}
+.why_us_item h2 .span3 {
+  background-color: rgba(179, 250, 63, 0.3);
+}
+/* .why_us_item > h2:nth-of-type(2) {
+  background-color: rgba(87, 230, 34, 0.1);
+} */
 .why_us_item > p {
   color: #444;
   font-size: 0.9rem;
 }
-.download_app img {
+.download_app {
   width: 100%;
+  background-image: url("../images/Frame\ 1171275073.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  height: 400px;
+}
+.download_content {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  color: #fff;
+}
+.download_images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  max-width: 500px;
 }
 @media screen and (max-width: 789px) {
   .naqlti_content_data {
     flex-direction: column;
   }
-  .download_app img {
-    width: 100%;
-    object-fit: cover;
+  .download_app {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+  .download_content h1 {
+    font-size: 1.5rem;
+  }
+  .download_images {
+    gap: 10px;
+  }
+  .download_images img {
+    width: 120px;
   }
   .why_us > p {
     width: 100%;

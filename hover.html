@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تأثير Hover على الكروت</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        background-color: #111;
+        color: #fff;
+      }
+
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        padding: 2rem;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .card {
+        position: relative;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        background: #000;
+        color: white;
+        text-decoration: none;
+        transition: border 0.3s ease;
+        border: 1px solid transparent;
+      }
+
+      .card:hover {
+        border: 1px solid #444;
+      }
+
+      .card-bg {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(229, 229, 229, 0.1);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+      }
+
+      .card:hover .card-bg {
+        opacity: 1;
+      }
+
+      .card-content {
+        position: relative;
+        z-index: 2;
+        padding: 2rem;
+      }
+
+      .card-content h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: #fff;
+      }
+
+      .card-content p {
+        color: #aaa;
+        font-size: 0.9rem;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-grid">
+      <a href="https://stripe.com" class="card">
+        <div class="card-bg"></div>
+        <div class="card-content">
+          <h4>Stripe</h4>
+          <p>شركة تبني بنية تحتية اقتصادية للإنترنت.</p>
+        </div>
+      </a>
+
+      <a href="https://netflix.com" class="card">
+        <div class="card-bg"></div>
+        <div class="card-content">
+          <h4>Netflix</h4>
+          <p>خدمة بث تقدم مجموعة واسعة من البرامج والمسلسلات.</p>
+        </div>
+      </a>
+
+      <a href="https://google.com" class="card">
+        <div class="card-bg"></div>
+        <div class="card-content">
+          <h4>Google</h4>
+          <p>
+            شركة تكنولوجيا متعددة الجنسيات تقدم خدمات ومنتجات مرتبطة بالإنترنت.
+          </p>
+        </div>
+      </a>
+
+      <a href="https://meta.com" class="card">
+        <div class="card-bg"></div>
+        <div class="card-content">
+          <h4>Meta</h4>
+          <p>
+            شركة تكنولوجيا تركز على بناء منتجات تعزز مهمة فيسبوك في تقريب الناس.
+          </p>
+        </div>
+      </a>
+
+      <a href="https://amazon.com" class="card">
+        <div class="card-bg"></div>
+        <div class="card-content">
+          <h4>Amazon</h4>
+          <p>
+            شركة تكنولوجية متعددة الجنسيات تركز على التجارة الإلكترونية والحوسبة
+            السحابية.
+          </p>
+        </div>
+      </a>
+
+      <a href="https://microsoft.com" class="card">
+        <div class="card-bg"></div>
+        <div class="card-content">
+          <h4>Microsoft</h4>
+          <p>شركة تقوم بتطوير وبيع البرمجيات والإلكترونيات وخدمات الكمبيوتر.</p>
+        </div>
+      </a>
+    </div>
+  </body>
+</html>
