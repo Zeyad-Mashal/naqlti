@@ -140,4 +140,11 @@
   .naqlti_content_data {
     flex-direction: column;
   }
+  .download_app img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .why_us > p {
+    width: 100%;
+  }
 }
